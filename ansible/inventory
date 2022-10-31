@@ -1,0 +1,8 @@
+[ubuntu_3]
+192.168.56.104     ansible_password=leli ansible_user=gogo
+
+[ubuntu_2]
+192.168.56.105     ansible_password=leli ansible_user=gogo
+
+
+
