@@ -1,20 +1,17 @@
 ---
-- hosts: ubuntu_2
-  become: true 
-  tasks:
+- hosts: all
+  become: true
+  tasks: 
+
     - name: update repo
-      apt:
+      apt: 
         update_cache: yes
 
-- hosts: ubuntu_2
-  become: true
-  roles:
-    # - db_servers
-    - web_servers
 
-- hosts: ubuntu_3
-  become: true 
-  roles:
-    - web_servers
 
+
+    - name: install apache2 package
+      apt:
+        name: apache2
+        state: absent
 
